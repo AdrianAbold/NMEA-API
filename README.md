@@ -1,9 +1,10 @@
 # ACONS-PettingZoo Integration: Multi-Agent Reinforcement Learning with Communication Constraints
 ## 1. Executive Summary
 This project bridges the gap between high-fidelity tactical simulators (ACONS) and modern Artificial Intelligence training frameworks (PettingZoo/Gymnasium). It allows AI agents (e.g., autonomous underwater vehicles or drones) to learn complex coordination strategies while operating under realistic communication constraints like limited bandwidth, message delays, and signal loss.
----
+
 ## 2. The Problem: "The Sim-to-Real Gap"
 In many real-world scenarios, agents cannot communicate perfectly. Most AI training environments assume "magic" instant communication. When these AI models are deployed in the real world (underwater, remote areas), they fail because they haven't learned to handle:
+
 1. **Limited Bandwidth ($B$ bits):** Only so many bits can be sent per step.
 2. **Latency ($L$ steps):** Information takes time to travel.
 3. **Packet Loss ($p$):** Sometimes messages just don't arrive.
